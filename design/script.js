@@ -2,7 +2,7 @@
 // ! FOR LESSONS NAMES //
 // ? FOR REGULAR COMMENTS //
 const rates = document.querySelectorAll(".rate");
-let currentV = 0;
+let userSelected = false;
 const submitBtn = document.querySelector(".btn");
 const front = document.querySelector(".front");
 const back = document.querySelector(".back");
@@ -15,6 +15,7 @@ rates.forEach(function (rate) {
 
       const answer = rate.getAttribute("data-id");
       answerRate.innerHTML = `You selected ${answer} out of 5`;
+      userSelected = true;
    });
 });
 
@@ -25,6 +26,10 @@ function removeSelected() {
 }
 
 submitBtn.addEventListener("click", function () {
-   front.classList.toggle("hidden");
-   back.classList.toggle("hidden");
+   if (userSelected) {
+      front.classList.toggle("hidden");
+      back.classList.toggle("hidden");
+   } else {
+      alert("Please select a rate before submitting");
+   }
 });
