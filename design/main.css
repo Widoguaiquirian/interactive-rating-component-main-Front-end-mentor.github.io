@@ -1,0 +1,174 @@
+/*CSS Stylesheet T.O.C. - Table of contents
+Created XX April XXXX
+L
+*/
+
+:root {
+   --color-primary: hsl(25, 97%, 53%);
+
+   --color-secondary: hsl(0, 0%, 100%);
+
+   --color-tertiary-light: hsl(217, 12%, 63%);
+   --color-tertiary-medium: hsl(216, 12%, 54%);
+   --color-tertiary-dark: hsl(213, 19%, 18%);
+   --color-tertiary-very-dark: hsl(216, 12%, 8%);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   background-color: var(--color-tertiary-very-dark);
+}
+
+body {
+   font-size: 1.5rem;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Overpass", sans-serif;
+   height: 100vh;
+   color: var(--color-tertiary-medium);
+}
+
+h1,
+p,
+h2,
+h3,
+h4,
+figure {
+   margin: 0;
+   padding: 0;
+}
+
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+/* The designs were created to the following widths:
+
+-  Mobile: 375px
+ */
+
+.component {
+   width: 402px;
+   height: 373px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 3rem;
+   background-color: var(--color-tertiary-dark);
+}
+
+.rating-section-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   background-color: #454c5265;
+   margin-bottom: 3.2rem;
+}
+
+h2 {
+   color: var(--color-secondary);
+   margin-bottom: 1rem;
+}
+
+.info p {
+   color: var(--color-tertiary-medium);
+   width: 95%;
+}
+
+.rating-options {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin: 3rem 0;
+}
+
+.rate {
+   width: 47px;
+   color: var(--color-tertiary-medium);
+   height: 47px;
+   display: flex;
+   align-items: center;
+   background-color: #454c5265;
+   border-radius: 50%;
+   line-height: 0;
+   justify-content: center;
+   cursor: pointer;
+   border: none;
+}
+
+.rate.selected {
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+}
+
+.rate:hover {
+   background-color: var(--color-tertiary-light);
+   color: var(--color-secondary);
+}
+
+.btn {
+   border-radius: 30px;
+   outline: none;
+   background-color: var(--color-primary);
+   border: none;
+   color: var(--color-secondary);
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 2px;
+   padding: 1.2rem 0;
+   cursor: pointer;
+   width: 100%;
+   transition: all 0.3s ease;
+}
+
+.btn:hover {
+   background-color: var(--color-secondary);
+   color: var(--color-primary);
+   transition: all 0.3s ease;
+}
+
+.hidden {
+   display: none;
+}
+
+.back {
+   text-align: center;
+}
+
+.illustration {
+   width: 100%;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.rate-selected {
+   color: var(--color-primary);
+   border-radius: 30px;
+   background-color: #454c5265;
+   padding: 0.5rem;
+   text-align: center;
+   width: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 2rem auto;
+}
+
+.rate-container {
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
