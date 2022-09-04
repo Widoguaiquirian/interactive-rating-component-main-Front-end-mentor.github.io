@@ -177,4 +177,8 @@ h2 {
    .component {
       max-width: 90%;
    }
+
+   .rating-options {
+      margin: 2rem 0;
+   }
 }
